@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Toronto Police Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <style>
+            .example1 {
+             height: 46px;	
+             overflow: hidden;
+             position: relative;
+            }
+            .example1 h3 {
+             font-size: 1.2em;
+             color: rgb(228, 7, 7);
+             position: absolute;
+             width: 100%;
+             height: 100%;
+             margin: 0;
+             padding: 0;
+             line-height: 50px;
+             text-align: right;
+             /* Starting position */
+             -moz-transform:translateX(100%);
+             -webkit-transform:translateX(100%);	
+             transform:translateX(100%);
+             /* Apply animation to this element */	
+             -moz-animation: example1 15s linear infinite;
+             -webkit-animation: example1 15s linear infinite;
+             animation: example1 15s linear infinite;
+            }
+            /* Move it (define the animation) */
+            @-moz-keyframes example1 {
+             0%   { -moz-transform: translateX(100%); }
+             100% { -moz-transform: translateX(-100%); }
+            }
+            @-webkit-keyframes example1 {
+             0%   { -webkit-transform: translateX(100%); }
+             100% { -webkit-transform: translateX(-100%); }
+            }
+            @keyframes example1 {
+             0%   { 
+             -moz-transform: translateX(100%); /* Firefox bug fix */
+             -webkit-transform: translateX(100%); /* Firefox bug fix */
+             transform: translateX(100%); 		
+             }
+             100% { 
+             -moz-transform: translateX(-100%); /* Firefox bug fix */
+             -webkit-transform: translateX(-100%); /* Firefox bug fix */
+             transform: translateX(-100%); 
+             }
+            }
+            </style>
+            
+            <!-- HTML -->	
+            <div class="example1">
+            <h3>Emergency in Toronto Call 911~Non-Emergency call 416-808-2222~Anonymous Crime Stoppers tips to prevent/solve crime call toll free 1-800-222-8477 or online http://222tips.com</h3>
+            </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.html">Toronto Police Crime Report</a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="homicide.html">Homicide</a></li>
+              <li><a href="theft.html">Theft</a></li>
+              <li><a href="https://public.tableau.com/profile/shweta.sharma3419#!/vizhome/breakIns/Sheet1?publish=yes">Break Ins</a></li>
+              <li><a href="Assault.html">Assaults</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="worstneighbour.html">Worst Neighbourhoods</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="heatmap.html">Current News</a></li>
+          <li><a href="https://twitter.com/TPSOperations">Twitter Updates</a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/shweta-sharma-3a4073187/">LinkedIn</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6 pad top"> <br>
+          <h3>Toronto Police:To Serve and Protect</h3> <br>
+        </div>
+
+        <!-- <div class="col-md-6 pad top"> <br>
+          <h3>Visualizations</h3> <br>
+        </div> -->
+
+      </div>
+
+    <div class="row">
+        <link rel="stylesheet">
+
+        <div class="container-fluid">
+            <div id="my-pics" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#my-pics" data-slide-to="0" class="active"></li>
+                    <li data-target="#my-pics" data-slide-to="1"></li>
+                    <li data-target="#my-pics" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+
+                        <!-- Slide 1 -->
+                        <div class="item active">
+                        <img src="police.jpg" alt="police">
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="item">
+                        <img src="police2.jpg" alt="police2">
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="item">
+                        <img src="police3.jpg" alt="police3">
+                        </div>
+                        
+                        </div>
+            </div>
+
+          <!-- <div class="pull-left">
+            
+            <img src="police.jpg" alt="Latitude vs. Max Temperature" width="880" height="575">
+          </div> -->
+
+          <div class="text-left">
+            <p> Toronto has been ranked the 4th safest city in the world – or so says the Economist Intelligence Unit </p> <br>
+            <p> The general crime rate in Toronto is very low and the city has a reputation as one of the safest major cities in North America
+                so it is very welcoming for women travelers. </p>
+            <p> Toronto Police address community concerns and to ensure that officers remain safe. Enhanced training also ensures that they have the skills they 
+              require to serve and protect the citizens of Toronto, which is consistent with our Service's mission to make Toronto the best and safest place to be.
+              </p>
+          </div>
+
+        </div>
+
+        <!-- <div class="col-md-3 pad top"> <br>
+
+          <div class="pull-right">
+            <a href="lat_temps.html"><img src="assets/images/output_39_0.png" alt="Latitude vs. Max Temperature" width="100%" height="100%"></a>
+            <a href="lat_wind.html"><img src="assets/images/output_45_0.png" alt="Latitude vs. Wind Speed" width="100%" height="100%"></a>
+          </div> -->
+
+       <!-- </div>
+
+       <div class="col-md-3 pad top"> <br>
+
+        <div class="pull-right">
+          <a href="lat_hum.html"><img src="assets/images/output_41_0.png" alt="Latitude vs. Humidity" width="100%" height="100%"></a>
+          <a href="lat_cloud.html"><img src="assets/images/output_43_0.png" alt="Latitude vs. Cloudiness" width="100%" height="100%"></a>
+        </div> -->
+
+      <!-- </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6 pad top"> <br>
+        Nothing here, blank columns
+      </div> -->
+
+      <!-- <div class="col-md-3 pad top"> <br>
+
+        <div class="pull-right">
+          <a href="glob_temps.html"><img src="assets/images/output_48_0.png" alt="Global Temperatures" width="100%" height="100%"></a>
+          <a href="glob_wind.html"><img src="assets/images/output_57_0.png" alt="Global Wind Speed" width="100%" height="100%"></a> -->
+
+        <!-- </div>
+
+      </div>
+
+      <div class="col-md-3 pad top"> <br>
+
+        <div class="pull-right">
+          <a href="glob_hum.html"><img src="assets/images/output_51_0.png" alt="Global Humidity" width="100%" height="100%"></a>
+          <a href="glob_cloud.html"><img src="assets/images/output_54_0.png" alt="Global Cloudiness" width="100%" height="100%"></a>
+        </div> -->
+
+      <!-- </div> -->
+
+  </div>
+
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="leaflet-heat.js"></script>
+
+  </html>

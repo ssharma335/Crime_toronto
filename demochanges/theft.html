@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization-Weather Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.html">Robbery</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!-- <li><Max Temperature</li>
+              <li><Humidity</li>
+              <li><Cloudiness</li>
+              <li><Wind Speed</li>
+              <li role="separator" class="divider"></li>
+             -->
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li> -->
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <!-- First Row -->
+    <div class="row">
+
+      <div class="col-md-8 pad top"> <br>
+
+        <h1>Robbery</h1> <br>
+
+          <div class="pull-left">
+            <img src="heatmap_time_2016.png" alt="Heat Map showing robbery in certain Hour of the day">
+          </div>
+
+        </div> <!-- 8 Columns -->
+
+        <div class="col-md-4 pad top"> <br>
+
+          <!-- <h3>Visualization</h3> <br> -->
+          <!-- <div class="pull-left">
+                <img src="assets/images/Fig2.png" alt="Max Temperature">
+              </div>
+            <div class="pull-right"> -->
+              <!-- <p> type the whole thing </p>
+            </div> -->
+
+        </div> <!-- 4 Columns -->
+
+    </div> <!-- Row -->
+
+  </div> <!-- Container -->
+
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </html>
